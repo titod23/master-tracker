@@ -1,6 +1,6 @@
 # Master Tracker (title could change)
 
-Description here
+Software Engineering Final Project - more description to come.
 
 ## Getting Started
 
