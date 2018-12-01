@@ -1,0 +1,8 @@
+<form action="/videos" method="GET">
+<div class="container">
+	<% @videos.each do |v|%>
+	<h2>Title: <%= v.title %></h2>
+	<p>Description: <%= v.description %></p>
+	<p>Video: <%= v.video_url %></p>
+	<%= youtube_embed(v.video_url) %>
+	<% end %>
