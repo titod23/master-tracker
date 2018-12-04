@@ -1,11 +1,18 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+		/* Move down content because we have a fixed navbar that is 3.5rem tall */
+		body {
+		  padding-top: 3.5rem;
+		  background-color:#000000;
+		}
+	</style>
 <!------ Include the above in your HEAD tag ---------->
 
 <body>
 	<div id="login">
-    <h3 class="text-center text-white pt-5">Register form</h3>
+    <h3 class="text-center text-white pt-5"></h3>
     <div class="container">
         <div id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
@@ -33,7 +40,6 @@
                             <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                             <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                         </div>
-                        
                     </form>
                 </div>
             </div>
