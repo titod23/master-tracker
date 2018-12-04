@@ -26,7 +26,7 @@ How we deploy to Heroku
 
 * [Sinatra](http://sinatrarb.com/) - The web framework used
 * [Stripe API](https://stripe.com/docs/api) - Billing Management
-* [Plaid](https://rometools.github.io/rome/) - Statement Retrieval
+* [Plaid](https://plaid.com/) - Statement Retrieval
 
 ## Versioning
 
@@ -35,5 +35,5 @@ How we deploy to Heroku
 ## Authors
 
 * **Roberto Diaz** - *Initial work, Stripe integration, etc* - [git](https://github.com/titod23)
-* **Oscar Mendoza** - *to edit later* - [git](https://github.com/)
+* **Oscar Mendoza** - *Plaid integration* - [git](https://github.com/jom512)
 * **Steve Gonzalez** - *to edit later* - [git](https://github.com/)
