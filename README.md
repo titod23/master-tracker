@@ -37,3 +37,4 @@ How we deploy to Heroku
 * **Roberto Diaz** - *Initial work, Stripe integration, etc* - [git](https://github.com/titod23)
 * **Oscar Mendoza** - *Plaid integration* - [git](https://github.com/jom512)
 * **Steve Gonzalez** - *Initial work, Front End- HTML/CSS* - [git](https://github.com/tweak08)
+

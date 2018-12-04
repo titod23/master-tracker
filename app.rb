@@ -23,16 +23,6 @@ get "/" do
 	erb :index
 end
 
-get "/videos" do
-	authenticate!
-	if current_user.pro || current_user.administrator
-		@videos = Video.all
-	else
-		@videos = Video.all(pro: false)
-	end
-	erb :videos
-end
-
 get '/upgrade' do
 	authenticate!
 	pro_access!
