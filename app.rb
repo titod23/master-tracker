@@ -1,8 +1,7 @@
 require "sinatra"
+require_relative "authentication.rb"
 require 'sinatra/flash'
 require 'sinatra/reloader'
-also_reload('lib/**/*.rb')
-require './lib/authentication'
 require "stripe"
 
 set :publishable_key, ENV['PUBLISHABLE_KEY']
