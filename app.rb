@@ -5,8 +5,24 @@ also_reload('lib/**/*.rb')
 require './lib/authentication'
 require "stripe"
 
+####
+require 'plaid'
+#####
+
+
 set :publishable_key, ENV['PUBLISHABLE_KEY']
 set :secret_key, ENV['SECRET_KEY']
+
+####
+client = Plaid::Client.new(env: ENV['PLAID_ENV'],
+                           client_id: ENV['PLAID_CLIENT_ID'],
+                           secret: ENV['PLAID_SECRET'],
+                           public_key: ENV['PLAID_PUBLIC_KEY'])
+
+
+access_token = nil
+####
+
 
 Stripe.api_key = settings.secret_key
 
@@ -48,5 +64,5 @@ post '/charge' do
 
   	current_user.pro = true
   	current_user.save
-  	erb :charge
+  	erb :plaid
 end
