@@ -20,25 +20,23 @@
         <li class="nav-item">
           <a class="nav-link" href="/logout"><font size="4">Logout</font></a>
         </li>
+
 <!-- If cx has logged in and upgraded, this will appear -->
       <% elsif current_user && current_user.pro %>
         <li class="nav-item">
-          <a class="nav-link" href="/plaid">Plaid</a>
+          <a class="nav-link" href="/plaid"><font size="4">Plaid</font></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
-          <a class="nav-link" href="/login"><font size="4">Login</font></a>
+          <a class="nav-link" href="/logout"><font size="4">Logout</font></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/sign_up"><font size="4">Sign Up</font></a>
-        </li>
+
 <!-- If cx has not logged in, this will appear -->
         <% else %>
          <li class="nav-item">
-           <a class="nav-link" href="/login">Login</a>
+           <a class="nav-link" href="/login"><font size="4">Login</font></a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="/sign_up">Sign Up</a>
+           <a class="nav-link" href="/sign_up"><font size="4">Sign Up</font></a>
          </li>
       <% end %>
 
