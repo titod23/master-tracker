@@ -9,22 +9,20 @@ require "stripe"
 require 'plaid'
 #####
 
-
+set :public_folder, File.dirname(__FILE__) + '/static'
 set :publishable_key, ENV['PUBLISHABLE_KEY']
 set :secret_key, ENV['SECRET_KEY']
 
+Stripe.api_key = settings.secret_key
+
 ####
-client = Plaid::Client.new(env: ENV['PLAID_ENV'],
+client = Plaid::Client.new(env: :sandbox,
                            client_id: ENV['PLAID_CLIENT_ID'],
                            secret: ENV['PLAID_SECRET'],
                            public_key: ENV['PLAID_PUBLIC_KEY'])
 
-
 access_token = nil
 ####
-
-
-Stripe.api_key = settings.secret_key
 
 #make an admin user if one doesn't exist!
 if User.all(administrator: true).count == 0
@@ -65,4 +63,10 @@ post '/charge' do
   	current_user.pro = true
   	current_user.save
   	erb :plaid
+end
+
+post '/sandbox/public_token/create' do
+
+
+
 end
