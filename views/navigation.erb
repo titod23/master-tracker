@@ -13,7 +13,7 @@
       </li> 
 
 <!-- If cx is logined in, this will apear -->
-      <% if current_user %>
+      <% if current_user && !current_user.pro %>
         <li class="nav-item">
           <a class="nav-link" href="/upgrade">Upgrade</a>
         </li>
@@ -21,14 +21,20 @@
           <a class="nav-link" href="/logout">Logout</a>
         </li>
 <!-- If cx has not logined in, this will give them the option to login -->
-      <% else %>
+      <% elsif current_user && current_user.pro %>
         <li class="nav-item">
-
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/plaid">Plaid</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sign_up">Sign Up</a>
+          <a class="nav-link" href="/logout">Logout</a>
         </li>
+        <% else %>
+         <li class="nav-item">
+           <a class="nav-link" href="/login">Login</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/sign_up">Sign Up</a>
+         </li>
       <% end %>
 
 

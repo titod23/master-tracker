@@ -79,7 +79,7 @@ end
 
 def pro_access!
 	if current_user && (current_user.pro || current_user.administrator)
-		redirect "/"
+		redirect "/plaid"
 	end	
 end
 
