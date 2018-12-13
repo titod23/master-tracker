@@ -9,25 +9,25 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/"><font size="6">Home</font><span class="sr-only">(current)</span></a>
       </li> 
 
 <!-- If cx is logined in, this will apear -->
       <% if current_user %>
         <li class="nav-item">
-          <a class="nav-link" href="/upgrade">Upgrade</a>
+          <a class="nav-link" href="/upgrade"><font size="6">Upgrade</font></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link" href="/logout"><font size="6">Logout</font></a>
         </li>
 <!-- If cx has not logined in, this will give them the option to login -->
       <% else %>
         <li class="nav-item">
 
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/login"><font size="6">Login</font></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sign_up">Sign Up</a>
+          <a class="nav-link" href="/sign_up"><font size="6">Sign Up</font></a>
         </li>
       <% end %>
 
