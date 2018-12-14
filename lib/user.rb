@@ -1,4 +1,4 @@
-require 'data_mapper' # metagem, requires common plugins too.
+    require 'data_mapper' # metagem, requires common plugins too.
 
 # need install dm-sqlite-adapter
 # if on heroku, use Postgres database
