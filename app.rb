@@ -10,7 +10,7 @@ require 'json'
 require 'date'
 require 'base64'
 
-set :public_folder, File.dirname(__FILE__) + '/static'
+set :public_folder, File.dirname('track_master/static')
 set :publishable_key, ENV['PUBLISHABLE_KEY']
 set :secret_key, ENV['SECRET_KEY']
 
@@ -38,10 +38,9 @@ get "/" do
 	erb :index
 end
 
-get '/plaid' do
-  authenticate!
-  pro_access!
-  erb :plaid
+get "/account" do
+
+  erb :account
 end
 
 get '/upgrade' do
