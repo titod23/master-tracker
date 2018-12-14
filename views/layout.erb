@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -12,17 +12,14 @@
 	<style type="text/css">
 		/* Move down content because we have a fixed navbar that is 3.5rem tall */
 		body {
-		  padding-top: 10rem;
-		  background-color: #ffffff;
+			padding-top: 2.5rem;
 		}
 	</style>
 	
 </head>
-<body>
-
-	<%= erb :navigation %>
-
 	<main role="main">
+	<body>
+		<%= erb :navigation %>
 
 		<div class="container">
 			<% if flash[:success] %>
@@ -42,6 +39,7 @@
 				  </button>
 				</div>
 			<% end %>
+		</div>
 
 		<%= yield %>
 
