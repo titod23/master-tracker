@@ -1,4 +1,6 @@
- 
+ <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- nav section -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,7 +12,56 @@
 		padding-top: 10rem;
 		background-color: #ffffff;
 	}
+
+	footer.footer .social-link {
+	  display: block;
+	  height: 4rem;
+	  width: 4rem;
+	  line-height: 4.3rem;
+	  font-size: 1.5rem;
+	  background-color: #1D809F;
+	  -webkit-transition: background-color 0.15s ease-in-out;
+	  transition: background-color 0.15s ease-in-out;
+	  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+	  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    footer.footer .social-link:hover {
+	  background-color: #155d74;
+	  text-decoration: none;
+    }
+
+	footer {
+	    padding-top: 30rem;
+
+	}
 	</style>
 
 	<h1 class="centered" style="color: #66cccc;">Invalid Username or Password</h1>		
 </body>
+
+<!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i href="#"class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i href="#" class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i href="#" class="fa fa-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0"><font size="4">Copyright &copy; Your Website 2018</font></p>
+      </div>
+    </footer>
+
+
