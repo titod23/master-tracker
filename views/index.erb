@@ -1,4 +1,7 @@
-
+<!-- junbotron -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- index.css stylesheet -->
@@ -23,6 +26,23 @@ body{
     line-height: 1.8;
     color: #f5f6f7;
 }
+
+.jumbotron{
+  background-color: #f4511e; /*Orange*/
+  color: #ffffff;
+  padding: 100px 25px;
+}
+
+.logo{
+  font-size: 200px;
+}
+
+@media screen and (max-width: 768){
+  .col-sm-4{
+    text-align: center;
+    margin: 25px 0;
+  }
+}
 h3 {
   font-size: 30px;
 }
@@ -31,7 +51,7 @@ p {
   font-size: 16px
 }
 
-  .margin {
+.margin {
   margin-bottom: 45px;
 }
 .bg-1 {
@@ -51,8 +71,7 @@ p {
   color: #000000;
 }
 .container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 60px 50px;
 }
 
 footer.footer .social-link {
@@ -79,15 +98,21 @@ footer {
 }
 </style>
 
- <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin"><strong>Master Tracker</strong></h3>
+ <!-- Jumbotron -->
+<div class="jumbotron text-center">
+  <h1>Master Tracker</h1>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin"><strong>About Master Tracker</strong></h3>
-  <p>In today’s age of cord-cutting and subscription-based services, people are rapidly accumulating many recurring fees.  It is often difficult to keep track of which service we are subscribed to and when we’re being charged.  There should be some way to keep track of which services a person is paying for and when they’ll be charged again.</p>
+  <div class="col-sm-8">
+    <h3 class="margin"><strong>About Master Tracker</strong></h3>
+       <p>In today’s age of cord-cutting and subscription-based services, people are rapidly accumulating many recurring fees.  It is often difficult to keep track of which service we are subscribed to and when we’re being charged.  There should be some way to keep track of which services a person is paying for and when they’ll be charged again.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
 </div>
  
  <!-- Third Container -->
@@ -102,42 +127,21 @@ footer {
 <!-- Fourth Conatianer -->
 <div class="container-fluid bg-4
   text-center">
-  <h3 class="margin"><strong>Our Mission</strong></h3>
-  <p>We’ve got your back
+  <div class="col-sm-4">
+  <span class="glyphicon glyphicon-globe logo"></span>
+</div>
+  <div class="col-sm-8">
+    <h3 class="margin"><strong>Our Mission</strong>
+    </h3>
+    <p>We’ve got your back
         <br>There are so many services out there that can help you simplify different parts of your life.</br>
         <br> Want to find a decent restaurant?</br> 
         <br>Trying to book a cheap flight in a hurry? Need diapers shipped to your house by tomorrow? Done, done and done.</br>
         <br>So why can’t your financial life be just as simple?</br>
-        <br>That’s why we designed Master Tracker.</br></p>
-</div>
-
-
-<!--- Discription of the websit. -- 
-<div class="container">
-  <h1 class="display-3" style="color:#66cccc"><font face="times new roman"><b>MASTER TRACKER</b></font></h1>
-
-    <p style="color: #000000"><font face="times new roman" size="4">Do you have too many accounts and are having a hard time keeping track? Let us help you!</font></p>
-
-  <h2 class="display-3" style="color:#66cccc"><font face="times new roman"><b>About</b></font></h2>
-    
-    <p style="color: #000000"><font face="times new roman" size="4">In today’s age of cord-cutting and subscription-based services, people are rapidly accumulating many recurring fees.  It is often difficult to keep track of which service we are subscribed to and when we’re being charged.  There should be some way to keep track of which services a person is paying for and when they’ll be charged again.</font></p>
-  
-  <p><a class="btn btn-primary btn-lg" href="/sign_up" role="button">Sign Up &raquo;</a></p>
-
-  <h3 class="display-3" style="color: #66cccc"><font face="times new roman">
-    How Does It Work?</font></h3>
-
-    <p><font face="times new roman" size="4">Forgot you were paying for that gym? No longer need that subscription? <strong>Master Tracker</strong> can help cancel unwanted accounts and keep track of the ones you do use.</font></p>
-
-    <p><font face="times new roman" size="4">At <strong>Master Tracker</strong>, we believe in transparency and the power of technology to improve people’s lives. We built a system that analyzes your specific financial situation and works to improve it.</font></p>
-
-    <h4 class="display-3" style="color: #66cccc"><font face="times new roman">Our Mission</font></h4>
-
-    <p><font face="times new roman" size="4"><br>We’ve got your back</br>.
-        <br>There are so many services out there that can help you simplify different parts of your life. Want to find a decent restaurant? Trying to book a cheap flight in a hurry? Need diapers shipped to your house by tomorrow? Done, done and done.</br>
-        <br>So why can’t your financial life be just as simple?</br>
         <br>That’s why we designed Master Tracker.</br>
-</div> -->
+      </p>
+    </div>
+</div>
 
 <!-- Footer -->
     <footer class="footer text-center">
